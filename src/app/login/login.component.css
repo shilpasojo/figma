@@ -1,0 +1,45 @@
+#login{
+    width: 300px;
+}
+h6{
+    padding: 2px;
+    padding-left: 150px;
+}
+#help{
+    text-decoration: none;
+    color: black;
+    font-size: smaller;
+    padding-left: 450px;
+}
+#place{
+    height: 20px;
+    width: 50px;
+    /* padding: 50px; */
+}
+#chechbox{
+    padding-left: 15px;
+}
+#keep{
+    margin-left: 5px;
+    font-size: 12px;
+    font-weight: 10px;
+}
+#forgot{
+    font-size: 12px;
+    text-decoration: none;
+    color: black;
+    margin-left: 70px;
+}
+#new{
+    font-size: 12px;
+    /* text-align: center; */
+    padding-left: 20px;
+    text-decoration: none;
+    color: black;
+}
+#form{
+    border: 0px;
+}
+#main{
+    text-align: center;
+}

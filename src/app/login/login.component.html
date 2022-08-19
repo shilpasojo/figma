@@ -1,0 +1,99 @@
+
+<h1 id="main">LOGIN PAGE</h1>
+
+<div class="row">
+
+    <!-- IMAGE GRID -->
+    <div class="col-lg-6 col-md-3  bg-warning">
+        <!-- col-6 -->
+        <img height="500px" width="700px" src="https://i.postimg.cc/tg6qvHpg/1.jpg" alt="">
+    </div>
+    
+    <!-- FORM GRID -->
+    <div class="col-lg-6 col-md-3 bg-light">
+        <!-- col-6 -->
+        <div>
+            <span>
+                <a id="help" href="">Having Trouble?<b>Get Help</b></a> &nbsp;
+                            <select id="place" name="ddl" id="place"> 
+                                <option selected="selected" disabled="disabled">Eng</option>
+                                <option value="">French</option>
+                                <option value="">Spanish</option>
+                                <option value="">Arabic</option>
+                                <option value="">Hindi</option>
+                            </select>
+            </span>
+        </div>
+        <!-- ERROR CHANCES -->
+        <h1 class="text-center mt-5">Login to Budget</h1>
+        <h6>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h6>
+
+
+        <div class="container col-md-12 mt-5">
+            <div class="d-flex justify-content-center h-100">
+                <div class="card">
+                    <div class="card-body">
+                       
+                      <!-- REACTIVE FORM -->
+                      <form id="form">
+                          <!-- [formGroup]="loginForm" (ngSubmit)="login()" -->
+      
+                          <!-- EMAIL ID -->
+                              <div class="input-group form-group">
+                                <!-- <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                </div> -->
+      
+                               <!--3.) TWO WAY BINDING - ngModel/formControlName     name="acno" must -->
+                               <!-- <label for="login_accno">Please Enter Your Email Id :</label> &nbsp;&nbsp; -->
+                               <input  type="text" class="form-control" placeholder="abc@gmail.com" id="login_accno" required>
+                              </div>
+                              <!-- <div *ngIf="this.loginForm.get('acno')?.touched && this.loginForm.get('acno')?.errors"  style="color: red;">
+                                  INVALID ACCOUNT NUMBER
+                              </div> -->
+      
+                          <!-- PASSWORD -->
+                              <div class="input-group form-group mt-4">
+                                <!-- <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fas fa-key"></i></span>
+                                </div> -->
+      
+                                <!--3.) TWO WAY BINDING - ngModel/formControlName    name="pswd" must-->
+                                <!-- <label for="login_accno">Please Enter Your Password :</label> -->
+
+                                <input formControlName="pswd" name="pswd" type="password" class="form-control" placeholder="Password" id="login_password" required>
+                              </div>
+                              <!-- <div *ngIf="this.loginForm.get('pswd')?.touched && this.loginForm.get('pswd')?.errors"  style="color: red;">
+                                  INVALID PASSWORD
+                              </div> -->
+
+                              <div id="chechbox">
+                                <!-- <label for="mearn">MEARN</label> -->
+                                <input type="checkbox" id="mearn" ><span id="keep">Keep me Logged in</span>
+                                <span><a id="forgot" href="">Forgot Password</a></span>
+                        
+                              </div>
+                              
+                                    
+                          <!-- LOGIN -->
+                              <div class="form-group">
+                              
+                                <!--3.) TWO WAY BINDING, ngModel -->
+                                <!-- <input type="submit" (click)="login()" value="Login" class="btn float-right login_btn " style="width:50%" > -->
+                                <!-- <input type="submit"  value="Login" class="btn float-right login_btn " style="width:50%" > -->
+                                  <!--ngSubmit  -->
+                                  <button routerLink="/dashboard" id="login" class="btn btn-primary mt-3">LOGIN</button>
+                              </div>
+                      </form>
+                  </div>
+                    <!-- routerLink="register" (redirecting to register page)   -->
+                    <!-- register is the pathName for register, set in app-routing.module.ts -->
+                    <p  style="color:white;align-items:baseline;">Not a user? <a id="new" href="register">Create New Account?</a></p>
+              </div>
+          </div>
+      </div>
+        
+      
+    </div>
+</div>
+

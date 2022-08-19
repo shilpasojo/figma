@@ -1,0 +1,43 @@
+#butt{
+    color: black;
+    border: 0;
+}
+.card1{
+    background-color: rgb(8, 8, 235);
+    height: 150px;
+    border-radius: 15px;
+
+}
+.white{
+    color: white;
+}
+.cardButton{
+    border-radius: 15px;
+    border: none;
+}
+.card2{
+ background-color: rgb(44, 85, 44);
+ border-radius: 15px;
+
+}
+.card3{
+    background-color: rgb(8, 8, 235);
+    border-radius: 15px;
+
+}
+.card4{
+    background-color: rgb(44, 85, 44);
+    border-radius: 15px;
+
+   }
+#last{
+    border-radius: 15px;
+
+}
+thead{
+    background-color: rgb(155, 148, 148);
+}
+.bold{
+    color: black;
+}
+   
